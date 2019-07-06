@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bilibili.cn.mapper.UserMapper">
+
+    <resultMap id="userResultMap" type="com.bilibili.cn.entity.User">
+        <id property="userId" column="user_id"/>
+        <result property="userRealName" column="user_realname"/>
+        <result property="userName" column="username"/>
+        <result property="password" column="password"/>
+        <result property="userBankCard" column="user_bankcard"/>
+        <result property="userSex" column="user_sex"/>
+        <result property="userHandImg" column="user_hand"/>
+        <result property="userAddr" column="user_addr"/>
+        <result property="userPhone" column="user_phone"/>
+        <result property="userQQ" column="user_qq"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="userCollection" column="user_collection"/>
+        <result property="userState" column="user_state"/>
+        <result property="userLogin" column="user_login"/>
+        <result property="userIp" column="user_ip"/>
+        <result property="userPass" column="user_pass"/>
+        <result property="userRmb" column="user_rmb"/>
+    </resultMap>
+
+    <select id="findUserByUserName" parameterType="java.lang.String" resultMap="userResultMap">
+        SELECT * FROM user WHERE username = #{username}
+    </select>
+
+    <select id="findAllUsers" resultMap="userResultMap">
+        SELECT * FROM user
+    </select>
+
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+

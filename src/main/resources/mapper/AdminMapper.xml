@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE mapper
+                PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bilibili.cn.mapper.AdminMapper">
+
+    <resultMap id="adminResultMap" type="com.bilibili.cn.entity.Admin">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+        <result property="level" column="level"/>
+        <result property="phone" column="phone"/>
+        <result property="email" column="email"/>
+        <result property="subject" column="subject"/>
+        <result property="sex" column="sex"/>
+    </resultMap>
+
+    <select id="findAdminByUserName" parameterType="java.lang.String" resultMap="adminResultMap">
+        SELECT * FROM admin WHERE username = #{username}
+    </select>
+
+</mapper>
