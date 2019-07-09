@@ -1,8 +1,8 @@
-/*! DataTables UIkit 3 integration
+/*! com.bilibili.cn.com.DataTables UIkit 3 integration
  */
 
 /**
- * This is a tech preview of UIKit integration with DataTables.
+ * This is a tech preview of UIKit integration with com.bilibili.cn.com.DataTables.
  */
 (function( factory ){
 	if ( typeof define === 'function' && define.amd ) {
@@ -19,7 +19,7 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				// Require DataTables, which attaches to jQuery, including
+				// Require com.bilibili.cn.com.DataTables, which attaches to jQuery, including
 				// jQuery if needed and have a $ property so we can access the
 				// jQuery object that is used
 				$ = require('datatables.net')(root, $).$;
@@ -37,7 +37,7 @@
 var DataTable = $.fn.dataTable;
 
 
-/* Set the defaults for DataTables initialisation */
+/* Set the defaults for com.bilibili.cn.com.DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
 		"<'row uk-grid'<'uk-width-1-2'l><'uk-width-1-2'f>>" +

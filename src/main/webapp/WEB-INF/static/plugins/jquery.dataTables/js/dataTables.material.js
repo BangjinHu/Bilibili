@@ -1,12 +1,12 @@
-/*! DataTables Bootstrap 3 integration
+/*! com.bilibili.cn.com.DataTables Bootstrap 3 integration
  * ©2011-2015 SpryMedia Ltd - datatables.net/license
  */
 
 /**
- * DataTables integration for Bootstrap 3. This requires Bootstrap 3 and
- * DataTables 1.10 or newer.
+ * com.bilibili.cn.com.DataTables integration for Bootstrap 3. This requires Bootstrap 3 and
+ * com.bilibili.cn.com.DataTables 1.10 or newer.
  *
- * This file sets the defaults and adds options to DataTables to style its
+ * This file sets the defaults and adds options to com.bilibili.cn.com.DataTables to style its
  * controls using Bootstrap. See http://datatables.net/manual/styling/bootstrap
  * for further information.
  */
@@ -25,7 +25,7 @@
 			}
 
 			if ( ! $ || ! $.fn.dataTable ) {
-				// Require DataTables, which attaches to jQuery, including
+				// Require com.bilibili.cn.com.DataTables, which attaches to jQuery, including
 				// jQuery if needed and have a $ property so we can access the
 				// jQuery object that is used
 				$ = require('datatables.net')(root, $).$;
@@ -43,7 +43,7 @@
 var DataTable = $.fn.dataTable;
 
 
-/* Set the defaults for DataTables initialisation */
+/* Set the defaults for com.bilibili.cn.com.DataTables initialisation */
 $.extend( true, DataTable.defaults, {
 	dom:
 		"<'mdl-grid'"+

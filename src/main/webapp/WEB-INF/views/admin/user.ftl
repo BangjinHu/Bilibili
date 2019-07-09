@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -201,8 +201,8 @@
             "processing": true,
             "serverSide": true,
             "ajax": {
-                "url": "teacher/process",
-                "type": "GET",
+                "url": "user/process",
+                "type": "POST",
                 "data": {
                     "showColumns": showColumns
                 }
@@ -222,15 +222,15 @@
                     "orderable": false
                 },
                 {
-                    "targets": 18,
+                    "targets": 17,
                     "data": null,
                     "render": function(data, type, row) {
                         var html =
                             '<input type="hidden" id="userId" value="{userId}">' +
-                            '<a class="btn btn-success" href="javascript:void(0);" title="详情"><i class="fa fa-search-plus "></i></a>' +
+                            // '<a class="btn btn-success" href="javascript:void(0);" title="详情"><i class="fa fa-search-plus "></i></a>' +
                             '<a class="btn btn-info" href="user/modify/{userId}" title="修改"><i class="fa fa-edit "></i></a>' +
                             '<a class="btn btn-danger" href="#" title="删除"><i class="fa fa-trash-o "></i></a>';
-                        html = html.replace(/{userId}/g, row.id);
+                        html = html.replace(/{userId}/g, row.userId);
                         return html;
                     }
                 }

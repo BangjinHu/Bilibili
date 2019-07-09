@@ -2,13 +2,14 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/mvc
-    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">
+    http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- 配置SpringMVC -->
     <!-- 1.开启SpringMVC注解模式 -->
@@ -27,7 +28,16 @@
     <!-- 静态资源映射 -->
     <mvc:resources mapping="/static/**" location="/WEB-INF/static/" />
 
-    <!--    拦截器-->
+    <!-- 3.使用注解是需要配置-->
+    <mvc:annotation-driven>
+        <mvc:argument-resolvers>
+            <bean class="com.bilibili.cn.ext.DataTableArgumentResolver"></bean>
+        </mvc:argument-resolvers>
+    </mvc:annotation-driven>
+
+    <aop:config proxy-target-class="true"></aop:config>
+
+    <!-- 4.拦截器-->
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**" />
@@ -37,7 +47,7 @@
         </mvc:interceptor>
     </mvc:interceptors>
 
-    <!-- 3.配置freemarker显示ViewResolver，视图解析器 freemarker -->
+    <!-- 5.配置freemarker显示ViewResolver，视图解析器 freemarker -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
         <property name="suffix">
             <value>.ftl</value>
@@ -46,9 +56,7 @@
         <property name="viewClass" value="com.bilibili.cn.ext.FreeMarkerViewExt"></property>
     </bean>
 
-
-
-    <!-- 4.扫描web相关的bean -->
+    <!-- 6.扫描web相关的bean -->
     <context:component-scan base-package="com.bilibili.cn.controller">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>
@@ -57,8 +65,7 @@
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
         <property name="messageConverters">
             <list>
-                <bean
-                        class="org.springframework.http.converter.StringHttpMessageConverter">
+                <bean class="org.springframework.http.converter.StringHttpMessageConverter">
                     <property name="supportedMediaTypes">
                         <list>
                             <value>text/html;charset=UTF-8</value>
@@ -68,7 +75,5 @@
             </list>
         </property>
     </bean>
-
-
 
 </beans>

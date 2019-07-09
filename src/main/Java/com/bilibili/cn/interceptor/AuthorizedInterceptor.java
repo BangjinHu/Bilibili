@@ -9,6 +9,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 public class AuthorizedInterceptor implements HandlerInterceptor {
 
@@ -21,10 +22,17 @@ public class AuthorizedInterceptor implements HandlerInterceptor {
     private AdminService adminService;
 
     @Override
-    public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-        String uri = httpServletRequest.getRequestURI();
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        String uri = request.getRequestURI();
         LOG.info("AuthorizedInterceptor : " + uri);
         System.out.println("AuthorizedInterceptor : " + uri);
+
+        //1.拦截用户必须登录
+        HttpSession session = request.getSession();
+
+
+        //2.单点登录实现
+
 
         return true;
     }

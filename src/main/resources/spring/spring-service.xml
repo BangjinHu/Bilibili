@@ -17,11 +17,37 @@
   	   http://www.springframework.org/schema/task
        http://www.springframework.org/schema/task/spring-task-3.1.xsd">
 
-    <!-- 激活annotation功能 -->
+    <!--1.扫描service包下所有使用注解的类型-->
     <context:component-scan base-package="com.bilibili.cn.service"/>
+
+    <!--2.激活annotation功能 -->
     <context:annotation-config />
 
-    <!-- Freemarker配置 -->
+    <!--3.配置事务管理器 将数据库操作当做事务处理，如果处理不成功就滚回-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!--注入数据库连接池-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!--3.1拦截方式配置事务-->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="save*" propagation="REQUIRED" />
+            <tx:method name="add*" propagation="REQUIRED" />
+            <tx:method name="create*" propagation="REQUIRED" />
+            <tx:method name="insert*" propagation="REQUIRED" />
+            <tx:method name="update*" propagation="REQUIRED" />
+        </tx:attributes>
+    </tx:advice>
+    <aop:config>
+        <aop:pointcut expression="execution(* com.bilibili.cn.service.impl.*.*(..))" id="txPointcut" />
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut" />
+    </aop:config>
+
+    <!--4.配置基于注解的声明式事务-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <!--5.Freemarker配置 -->
     <bean id="freemarkerConfig"
           class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value="/WEB-INF/views/" />
@@ -40,19 +66,4 @@
             </props>
         </property>
     </bean>
-
-<!--    &lt;!&ndash;扫描service包下所有使用注解的类型&ndash;&gt;-->
-<!--    <context:component-scan base-package="com.bilibili.cn.*">-->
-<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
-<!--    </context:component-scan>-->
-
-    <!--2.配置事务管理器 将数据库操作当做事务处理，如果处理不成功就滚回-->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <!--注入数据库连接池-->
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
-
-    <!--3.配置基于注解的声明式事务-->
-    <tx:annotation-driven transaction-manager="transactionManager"/>
-
 </beans>

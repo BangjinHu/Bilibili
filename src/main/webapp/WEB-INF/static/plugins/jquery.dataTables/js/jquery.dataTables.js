@@ -1,9 +1,9 @@
-/*! DataTables 1.10.13
+/*! com.bilibili.cn.com.DataTables 1.10.13
  * ©2008-2016 SpryMedia Ltd - datatables.net/license
  */
 
 /**
- * @summary     DataTables
+ * @summary     com.bilibili.cn.com.DataTables
  * @description Paginate, search and order HTML tables
  * @version     1.10.13
  * @file        jquery.dataTables.js
@@ -60,18 +60,18 @@
 	"use strict";
 
 	/**
-	 * DataTables is a plug-in for the jQuery Javascript library. It is a highly
+	 * com.bilibili.cn.com.DataTables is a plug-in for the jQuery Javascript library. It is a highly
 	 * flexible tool, based upon the foundations of progressive enhancement,
 	 * which will add advanced interaction controls to any HTML table. For a
 	 * full list of features please refer to
-	 * [DataTables.net](href="http://datatables.net).
+	 * [com.bilibili.cn.com.DataTables.net](href="http://datatables.net).
 	 *
 	 * Note that the `DataTable` object is not a global variable but is aliased
 	 * to `jQuery.fn.DataTable` and `jQuery.fn.dataTable` through which it may
 	 * be  accessed.
 	 *
 	 *  @class
-	 *  @param {object} [init={}] Configuration object for DataTables. Options
+	 *  @param {object} [init={}] Configuration object for com.bilibili.cn.com.DataTables. Options
 	 *    are defined by {@link DataTable.defaults}
 	 *  @requires jQuery 1.7+
 	 *
@@ -190,13 +190,13 @@
 		
 		
 		/**
-		 * Create a DataTables Api instance, with the currently selected tables for
+		 * Create a com.bilibili.cn.com.DataTables Api instance, with the currently selected tables for
 		 * the Api's context.
 		 * @param {boolean} [traditional=false] Set the API instance's context to be
 		 *   only the table referred to by the `DataTable.ext.iApiIndex` option, as was
-		 *   used in the API presented by DataTables 1.9- (i.e. the traditional mode),
+		 *   used in the API presented by com.bilibili.cn.com.DataTables 1.9- (i.e. the traditional mode),
 		 *   or if all tables captured in the jQuery object should be used.
-		 * @return {DataTables.Api}
+		 * @return {com.bilibili.cn.com.DataTables.Api}
 		 */
 		this.api = function ( traditional )
 		{
@@ -264,7 +264,7 @@
 		
 		
 		/**
-		 * This function will make DataTables recalculate the column sizes, based on the data
+		 * This function will make com.bilibili.cn.com.DataTables recalculate the column sizes, based on the data
 		 * contained in the table and the sizes applied to the columns (in the DOM, CSS or
 		 * through the sWidth parameter). This can be useful when the width of the table's
 		 * parent element changes (for example a window resize).
@@ -394,7 +394,7 @@
 		
 		
 		/**
-		 * Restore the table to it's original state in the DOM by removing all of DataTables
+		 * Restore the table to it's original state in the DOM by removing all of com.bilibili.cn.com.DataTables
 		 * enhancements, alterations to the DOM structure of the table and event listeners.
 		 *  @param {boolean} [remove=false] Completely remove the table from the DOM
 		 *  @dtopt API
@@ -574,7 +574,7 @@
 		 *        this.innerHTML = 'clicked';
 		 *      } );
 		 *
-		 *      // Init DataTables
+		 *      // Init com.bilibili.cn.com.DataTables
 		 *      oTable = $('#example').dataTable();
 		 *    } );
 		 */
@@ -670,7 +670,7 @@
 		
 		/**
 		 * Change the pagination - provides the internal logic for pagination in a simple API
-		 * function. With this function you can have a DataTables table go to the next,
+		 * function. With this function you can have a com.bilibili.cn.com.DataTables table go to the next,
 		 * previous, first or last pages.
 		 *  @param {string|int} mAction Paging action to take: "first", "previous", "next" or "last"
 		 *    or page number to jump to (integer), note that page 0 is the first page.
@@ -722,7 +722,7 @@
 		
 		/**
 		 * Get the settings for a particular table for external manipulation
-		 *  @returns {object} DataTables settings object. See
+		 *  @returns {object} com.bilibili.cn.com.DataTables settings object. See
 		 *    {@link DataTable.models.oSettings}
 		 *  @dtopt API
 		 *  @deprecated Since v1.10
@@ -830,11 +830,11 @@
 		
 		
 		/**
-		 * Provide a common method for plug-ins to check the version of DataTables being used, in order
+		 * Provide a common method for plug-ins to check the version of com.bilibili.cn.com.DataTables being used, in order
 		 * to ensure compatibility.
 		 *  @param {string} sVersion Version string to check for, in the format "X.Y.Z". Note that the
 		 *    formats "X" and "X.Y" are also acceptable.
-		 *  @returns {boolean} true if this version of DataTables is greater or equal to the required
+		 *  @returns {boolean} true if this version of com.bilibili.cn.com.DataTables is greater or equal to the required
 		 *    version, or false if this version of DataTales is not suitable
 		 *  @method
 		 *  @dtopt API
@@ -1340,10 +1340,10 @@
 	
 	/*
 	 * It is useful to have variables which are scoped locally so only the
-	 * DataTables functions can access them and they don't leak into global space.
+	 * com.bilibili.cn.com.DataTables functions can access them and they don't leak into global space.
 	 * At the same time these functions are often useful over multiple files in the
 	 * core and API, so we list, or at least document, all variables which are used
-	 * by DataTables as private variables here. This also ensures that there is no
+	 * by com.bilibili.cn.com.DataTables as private variables here. This also ensures that there is no
 	 * clashing of variable names and that they can easily referenced for reuse.
 	 */
 	
@@ -1577,10 +1577,10 @@
 	
 	
 	/**
-	 * DataTables utility methods
+	 * com.bilibili.cn.com.DataTables utility methods
 	 * 
-	 * This namespace provides helper methods that DataTables uses internally to
-	 * create a DataTable, but which are not exclusively used only for DataTables.
+	 * This namespace provides helper methods that com.bilibili.cn.com.DataTables uses internally to
+	 * create a DataTable, but which are not exclusively used only for com.bilibili.cn.com.DataTables.
 	 * These methods can be used by extension authors to save the duplication of
 	 * code.
 	 *
@@ -1835,7 +1835,7 @@
 	 */
 	function _fnBrowserDetect( settings )
 	{
-		// We don't need to do this every time DataTables is constructed, the values
+		// We don't need to do this every time com.bilibili.cn.com.DataTables is constructed, the values
 		// calculated are specific to the browser and OS configuration which we
 		// don't expect to change between initialisations
 		if ( ! DataTable.__browser ) {
@@ -2062,7 +2062,7 @@
 			return _fnSetObjectDataFn( mDataSrc )( rowData, val, meta );
 		};
 	
-		// Indicate if DataTables should read DOM data as an object or array
+		// Indicate if com.bilibili.cn.com.DataTables should read DOM data as an object or array
 		// Used in _fnGetRowElements
 		if ( typeof mDataSrc !== 'number' ) {
 			oSettings._rowReadObject = true;
@@ -2359,7 +2359,7 @@
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {array} aData data array to be added
 	 *  @param {node} [nTr] TR element to add to the table - optional. If not given,
-	 *    DataTables will create a row automatically
+	 *    com.bilibili.cn.com.DataTables will create a row automatically
 	 *  @param {array} [anTds] Array of TD|TH elements for the row - must be given
 	 *    if nTr is.
 	 *  @returns {int} >=0 if successful (index of new aoData entry), -1 if failed
@@ -2850,7 +2850,7 @@
 	 * Mark cached data as invalid such that a re-read of the data will occur when
 	 * the cached data is next requested. Also update from the data source object.
 	 *
-	 * @param {object} settings DataTables settings object
+	 * @param {object} settings com.bilibili.cn.com.DataTables settings object
 	 * @param {int}    rowIdx   Row index to invalidate
 	 * @param {string} [src]    Source to invalidate from: undefined, 'auto', 'dom'
 	 *     or 'data'
@@ -2917,7 +2917,7 @@
 				cols[i].sType = null;
 			}
 	
-			// Update DataTables special `DT_*` attributes for the row
+			// Update com.bilibili.cn.com.DataTables special `DT_*` attributes for the row
 			_fnRowAttributes( settings, row );
 		}
 	}
@@ -2927,7 +2927,7 @@
 	 * Build a data source object from an HTML row, reading the contents of the
 	 * cells that are in the row.
 	 *
-	 * @param {object} settings DataTables settings object
+	 * @param {object} settings com.bilibili.cn.com.DataTables settings object
 	 * @param {node|object} TR element from which to read data or existing row
 	 *   object from which to re-read the data from the cells
 	 * @param {int} [colIdx] Optional column index
@@ -3044,7 +3044,7 @@
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {int} iRow Row to consider
 	 *  @param {node} [nTrIn] TR element to add to the table - optional. If not given,
-	 *    DataTables will create a row automatically
+	 *    com.bilibili.cn.com.DataTables will create a row automatically
 	 *  @param {array} [anTds] Array of TD|TH elements for the row - must be given
 	 *    if nTr is.
 	 *  @memberof DataTable#oApi
@@ -3129,8 +3129,8 @@
 	/**
 	 * Add attributes to a row based on the special `DT_*` parameters in a data
 	 * source object.
-	 *  @param {object} settings DataTables settings object
-	 *  @param {object} DataTables row object for the row to be modified
+	 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
+	 *  @param {object} com.bilibili.cn.com.DataTables row object for the row to be modified
 	 *  @memberof DataTable#oApi
 	 */
 	function _fnRowAttributes( settings, row )
@@ -3543,7 +3543,7 @@
 		var holding = $('<div/>').insertBefore( table ); // Holding element for speed
 		var features = oSettings.oFeatures;
 	
-		// All DataTables are wrapped in a div
+		// All com.bilibili.cn.com.DataTables are wrapped in a div
 		var insert = $('<div/>', {
 			id:      oSettings.sTableId+'_wrapper',
 			'class': classes.sWrapper + (oSettings.nTFoot ? '' : ' '+classes.sNoFooter)
@@ -3801,7 +3801,7 @@
 	 *
 	 * @param {object} oSettings dataTables settings object
 	 * @param {array} data Data to send to the server, required by
-	 *     DataTables - may be augmented by developer callbacks
+	 *     com.bilibili.cn.com.DataTables - may be augmented by developer callbacks
 	 * @param {function} fn Callback function to run when data is obtained
 	 */
 	function _fnBuildAjax( oSettings, data, fn )
@@ -3898,7 +3898,7 @@
 	
 		if ( oSettings.fnServerData )
 		{
-			// DataTables 1.9- compatibility
+			// com.bilibili.cn.com.DataTables 1.9- compatibility
 			oSettings.fnServerData.call( instance,
 				oSettings.sAjaxSource,
 				$.map( data, function (val, key) { // Need to convert back to 1.9 trad format
@@ -3910,7 +3910,7 @@
 		}
 		else if ( oSettings.sAjaxSource || typeof ajax === 'string' )
 		{
-			// DataTables 1.9- compatibility
+			// com.bilibili.cn.com.DataTables 1.9- compatibility
 			oSettings.jqXHR = $.ajax( $.extend( baseAjax, {
 				url: ajax || oSettings.sAjaxSource
 			} ) );
@@ -3960,7 +3960,7 @@
 	/**
 	 * Build up the parameters in an object needed for a server-side processing
 	 * request. Note that this is basically done twice, is different ways - a modern
-	 * method which is used by default in DataTables 1.10 which uses objects and
+	 * method which is used by default in com.bilibili.cn.com.DataTables 1.10 which uses objects and
 	 * arrays, or the 1.9- method with is name / value pairs. 1.9 method is used if
 	 * the sAjaxSource option is used in the initialisation, or the legacyAjax
 	 * option is set.
@@ -3987,14 +3987,14 @@
 			data.push( { 'name': name, 'value': value } );
 		};
 	
-		// DataTables 1.9- compatible method
+		// com.bilibili.cn.com.DataTables 1.9- compatible method
 		param( 'sEcho',          settings.iDraw );
 		param( 'iColumns',       columnCount );
 		param( 'sColumns',       _pluck( columns, 'sName' ).join(',') );
 		param( 'iDisplayStart',  displayStart );
 		param( 'iDisplayLength', displayLength );
 	
-		// DataTables 1.10+ method
+		// com.bilibili.cn.com.DataTables 1.10+ method
 		var d = {
 			draw:    settings.iDraw,
 			columns: [],
@@ -4069,7 +4069,7 @@
 	 * Data the data from the server (nuking the old) and redraw the table
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {object} json json data return from the server.
-	 *  @param {string} json.sEcho Tracking flag for DataTables to match requests
+	 *  @param {string} json.sEcho Tracking flag for com.bilibili.cn.com.DataTables to match requests
 	 *  @param {int} json.iTotalRecords Number of records in the data set, not accounting for filtering
 	 *  @param {int} json.iTotalDisplayRecords Number of records in the data set, accounting for filtering
 	 *  @param {array} json.aaData The data to display on this page
@@ -4481,7 +4481,7 @@
 							cellData = fomatters[ column.sType ]( cellData );
 						}
 	
-						// Search in DataTables 1.10 is string based. In 1.11 this
+						// Search in com.bilibili.cn.com.DataTables 1.10 is string based. In 1.11 this
 						// should be altered to also allow strict type checking.
 						if ( cellData === null ) {
 							cellData = '';
@@ -4896,7 +4896,7 @@
 	
 	/**
 	 * Alter the display settings to change the page
-	 *  @param {object} settings DataTables settings object
+	 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 	 *  @param {string|int} action Paging action to take: "first", "previous",
 	 *    "next" or "last" or page number to jump to (integer)
 	 *  @param [bool] redraw Automatically draw the update or not
@@ -5156,7 +5156,7 @@
 	 * Update the header, footer and body tables for resizing - i.e. column
 	 * alignment.
 	 *
-	 * Welcome to the most horrible function DataTables. The process that this
+	 * Welcome to the most horrible function com.bilibili.cn.com.DataTables. The process that this
 	 * function follows is basically:
 	 *   1. Re-create the table inside the scrolling div
 	 *   2. Take live measurements from the DOM
@@ -5308,7 +5308,7 @@
 	
 		// Apply all widths in final pass
 		_fnApplyToChildren( function(nToSize, i) {
-			// Only apply widths to the DataTables detected header cells - this
+			// Only apply widths to the com.bilibili.cn.com.DataTables detected header cells - this
 			// prevents complex headers from having contradictory sizes applied
 			if ( $.inArray( nToSize, dtHeaderCells ) !== -1 ) {
 				nToSize.style.width = headerWidths[i];
@@ -5520,7 +5520,7 @@
 		}
 	
 		/* If the number of columns in the DOM equals the number that we have to
-		 * process in DataTables, then we can use the offsets that are created by
+		 * process in com.bilibili.cn.com.DataTables, then we can use the offsets that are created by
 		 * the web- browser. No custom sizes can be set in order for this to happen,
 		 * nor scrolling used
 		 */
@@ -5647,7 +5647,7 @@
 			// Get the width of each column in the constructed table - we need to
 			// know the inner width (so it can be assigned to the other table's
 			// cells) and the outer width so we can calculate the full width of the
-			// table. This is safe since DataTables requires a unique cell for each
+			// table. This is safe since com.bilibili.cn.com.DataTables requires a unique cell for each
 			// column, but if ever a header can span multiple columns, this will
 			// need to be modified.
 			var total = 0;
@@ -6295,7 +6295,7 @@
 	/**
 	 * Attempt to load a saved table state
 	 *  @param {object} oSettings dataTables settings object
-	 *  @param {object} oInit DataTables init object so we can override settings
+	 *  @param {object} oInit com.bilibili.cn.com.DataTables init object so we can override settings
 	 *  @param {function} callback Callback to execute when the state has been loaded
 	 *  @memberof DataTable#oApi
 	 */
@@ -6422,7 +6422,7 @@
 	 */
 	function _fnLog( settings, level, msg, tn )
 	{
-		msg = 'DataTables warning: '+
+		msg = 'com.bilibili.cn.com.DataTables warning: '+
 			(settings ? 'table id='+settings.sTableId+' - ' : '')+msg;
 	
 		if ( tn ) {
@@ -6499,7 +6499,7 @@
 	 *  @param {boolean} breakRefs If true, then arrays will be sliced to take an
 	 *      independent copy with the exception of the `data` or `aaData` parameters
 	 *      if they are present. This is so you can pass in a collection to
-	 *      DataTables and have that used as your data source without breaking the
+	 *      com.bilibili.cn.com.DataTables and have that used as your data source without breaking the
 	 *      references
 	 *  @returns {object} out Reference, just for convenience - out === the return.
 	 *  @memberof DataTable#oApi
@@ -6687,7 +6687,7 @@
 	
 	
 	/**
-	 * Computed structure of the DataTables API, defined by the options passed to
+	 * Computed structure of the com.bilibili.cn.com.DataTables API, defined by the options passed to
 	 * `DataTable.Api.register()` when building the API.
 	 *
 	 * The structure is built in order to speed creation and extension of the Api
@@ -6738,19 +6738,19 @@
 	 * Abstraction for `context` parameter of the `Api` constructor to allow it to
 	 * take several different forms for ease of use.
 	 *
-	 * Each of the input parameter types will be converted to a DataTables settings
+	 * Each of the input parameter types will be converted to a com.bilibili.cn.com.DataTables settings
 	 * object where possible.
 	 *
 	 * @param  {string|node|jQuery|object} mixed DataTable identifier. Can be one
 	 *   of:
 	 *
-	 *   * `string` - jQuery selector. Any DataTables' matching the given selector
+	 *   * `string` - jQuery selector. Any com.bilibili.cn.com.DataTables' matching the given selector
 	 *     with be found and used.
 	 *   * `node` - `TABLE` node which has already been formed into a DataTable.
 	 *   * `jQuery` - A jQuery object of `TABLE` nodes.
-	 *   * `object` - DataTables settings object
-	 *   * `DataTables.Api` - API instance
-	 * @return {array|null} Matching DataTables settings objects. `null` or
+	 *   * `object` - com.bilibili.cn.com.DataTables settings object
+	 *   * `com.bilibili.cn.com.DataTables.Api` - API instance
+	 * @return {array|null} Matching com.bilibili.cn.com.DataTables settings objects. `null` or
 	 *   `undefined` is returned if no matching DataTable is found.
 	 * @ignore
 	 */
@@ -6766,7 +6766,7 @@
 			return [];
 		}
 		else if ( mixed.nTable && mixed.oApi ) {
-			// DataTables settings object
+			// com.bilibili.cn.com.DataTables settings object
 			return [ mixed ];
 		}
 		else if ( mixed.nodeName && mixed.nodeName.toLowerCase() === 'table' ) {
@@ -6782,7 +6782,7 @@
 			jq = $(mixed);
 		}
 		else if ( mixed instanceof $ ) {
-			// jQuery object (also DataTables instance)
+			// jQuery object (also com.bilibili.cn.com.DataTables instance)
 			jq = mixed;
 		}
 	
@@ -6796,8 +6796,8 @@
 	
 	
 	/**
-	 * DataTables API class - used to control and interface with  one or more
-	 * DataTables enhanced tables.
+	 * com.bilibili.cn.com.DataTables API class - used to control and interface with  one or more
+	 * com.bilibili.cn.com.DataTables enhanced tables.
 	 *
 	 * The API class is heavily based on jQuery, presenting a chainable interface
 	 * that you can use to interact with tables. Each instance of the API class has
@@ -6827,22 +6827,22 @@
 	 *
 	 * @class DataTable.Api
 	 * @param {array|object|string|jQuery} context DataTable identifier. This is
-	 *   used to define which DataTables enhanced tables this API will operate on.
+	 *   used to define which com.bilibili.cn.com.DataTables enhanced tables this API will operate on.
 	 *   Can be one of:
 	 *
-	 *   * `string` - jQuery selector. Any DataTables' matching the given selector
+	 *   * `string` - jQuery selector. Any com.bilibili.cn.com.DataTables' matching the given selector
 	 *     with be found and used.
 	 *   * `node` - `TABLE` node which has already been formed into a DataTable.
 	 *   * `jQuery` - A jQuery object of `TABLE` nodes.
-	 *   * `object` - DataTables settings object
+	 *   * `object` - com.bilibili.cn.com.DataTables settings object
 	 * @param {array} [data] Data to initialise the Api instance with.
 	 *
 	 * @example
-	 *   // Direct initialisation during DataTables construction
+	 *   // Direct initialisation during com.bilibili.cn.com.DataTables construction
 	 *   var api = $('#example').DataTable();
 	 *
 	 * @example
-	 *   // Initialisation using a DataTables jQuery object
+	 *   // Initialisation using a com.bilibili.cn.com.DataTables jQuery object
 	 *   var api = $('#example').dataTable().api();
 	 *
 	 * @example
@@ -7296,10 +7296,10 @@
 	
 	/**
 	 * Selector for HTML tables. Apply the given selector to the give array of
-	 * DataTables settings objects.
+	 * com.bilibili.cn.com.DataTables settings objects.
 	 *
 	 * @param {string|integer} [selector] jQuery selector string or integer
-	 * @param  {array} Array of DataTables settings objects to be filtered
+	 * @param  {array} Array of com.bilibili.cn.com.DataTables settings objects to be filtered
 	 * @return {array}
 	 * @ignore
 	 */
@@ -7422,7 +7422,7 @@
 	 *//**
 	 * Set the current page.
 	 *
-	 * Note that if you attempt to show a page which does not exist, DataTables will
+	 * Note that if you attempt to show a page which does not exist, com.bilibili.cn.com.DataTables will
 	 * not throw an error, but rather reset the paging.
 	 *
 	 * @param {integer|string} action The paging action to take. This can be one of:
@@ -7432,7 +7432,7 @@
 	 *    * `next` - Jump to the next page
 	 *    * `previous` - Jump to previous page
 	 *    * `last` - Jump to the last page.
-	 * @returns {DataTables.Api} this
+	 * @returns {com.bilibili.cn.com.DataTables.Api} this
 	 */
 	_api_register( 'page()', function ( action ) {
 		if ( action === undefined ) {
@@ -7557,7 +7557,7 @@
 	
 	
 	/**
-	 * Get the JSON response from the last Ajax request that DataTables made to the
+	 * Get the JSON response from the last Ajax request that com.bilibili.cn.com.DataTables made to the
 	 * server. Note that this returns the JSON from the first table in the current
 	 * context.
 	 *
@@ -7641,7 +7641,7 @@
 			else {
 				settings.ajax = url;
 			}
-			// No need to consider sAjaxSource here since DataTables gives priority
+			// No need to consider sAjaxSource here since com.bilibili.cn.com.DataTables gives priority
 			// to `ajax` over `sAjaxSource`. So setting `ajax` here, renders any
 			// value of `sAjaxSource` redundant.
 		} );
@@ -7883,7 +7883,7 @@
 			// Sizzle's fast selector or HTML4 - in HTML5 the ID can be anything,
 			// but to select it using a CSS selector engine (like Sizzle or
 			// querySelect) it would need to need to be escaped for some characters.
-			// DataTables simplifies this for row selectors since you can select
+			// com.bilibili.cn.com.DataTables simplifies this for row selectors since you can select
 			// only a row. A # indicates an id any anything that follows is the id -
 			// unescaped.
 			if ( typeof sel === 'string' && sel.charAt(0) === '#' ) {
@@ -9047,12 +9047,12 @@
 	
 	
 	/**
-	 * Provide a common method for plug-ins to check the version of DataTables being
+	 * Provide a common method for plug-ins to check the version of com.bilibili.cn.com.DataTables being
 	 * used, in order to ensure compatibility.
 	 *
 	 *  @param {string} version Version string to check for, in the format "X.Y.Z".
 	 *    Note that the formats "X" and "X.Y" are also acceptable.
-	 *  @returns {boolean} true if this version of DataTables is greater or equal to
+	 *  @returns {boolean} true if this version of com.bilibili.cn.com.DataTables is greater or equal to
 	 *    the required version, or false if this version of DataTales is not
 	 *    suitable
 	 *  @static
@@ -9128,7 +9128,7 @@
 	 *  @param {boolean} [visible=false] Flag to indicate if you want all (default)
 	 *    or visible tables only.
 	 *  @returns {array} Array of `table` nodes (not DataTable instances) which are
-	 *    DataTables
+	 *    com.bilibili.cn.com.DataTables
 	 *  @static
 	 *  @dtopt API-Static
 	 *
@@ -9160,7 +9160,7 @@
 	
 	/**
 	 * Convert from camel case parameters to Hungarian notation. This is made public
-	 * for the extensions to provide the same ability as DataTables core to accept
+	 * for the extensions to provide the same ability as com.bilibili.cn.com.DataTables core to accept
 	 * either the 1.9 style Hungarian notation, or the 1.10+ style camelCase
 	 * parameters.
 	 *
@@ -9302,7 +9302,7 @@
 			jqTbody.children().detach();
 			jqTbody.append( rows );
 	
-			// Remove the DataTables generated nodes, events and classes
+			// Remove the com.bilibili.cn.com.DataTables generated nodes, events and classes
 			var removedMethod = remove ? 'remove' : 'detach';
 			jqTable[ removedMethod ]();
 			jqWrapper[ removedMethod ]();
@@ -9413,7 +9413,7 @@
 	DataTable.settings = [];
 
 	/**
-	 * Object models container, for the various models that DataTables has
+	 * Object models container, for the various models that com.bilibili.cn.com.DataTables has
 	 * available to it. These models define the objects that are used to hold
 	 * the active state and configuration of the table.
 	 *  @namespace
@@ -9423,7 +9423,7 @@
 	
 	
 	/**
-	 * Template object for the way in which DataTables holds information about
+	 * Template object for the way in which com.bilibili.cn.com.DataTables holds information about
 	 * search information for the global filter and individual column filters.
 	 *  @namespace
 	 */
@@ -9452,7 +9452,7 @@
 		"bRegex": false,
 	
 		/**
-		 * Flag to indicate if DataTables is to use its smart filtering or not.
+		 * Flag to indicate if com.bilibili.cn.com.DataTables is to use its smart filtering or not.
 		 *  @type boolean
 		 *  @default true
 		 */
@@ -9463,7 +9463,7 @@
 	
 	
 	/**
-	 * Template object for the way in which DataTables holds information about
+	 * Template object for the way in which com.bilibili.cn.com.DataTables holds information about
 	 * each individual row. This is the object format used for the settings
 	 * aoData array.
 	 *  @namespace
@@ -9486,7 +9486,7 @@
 	
 		/**
 		 * Data object from the original data source for the row. This is either
-		 * an array if using the traditional form of DataTables, or an object if
+		 * an array if using the traditional form of com.bilibili.cn.com.DataTables, or an object if
 		 * using mData options. The exact type will depend on the passed in
 		 * data from the data source, or will be an array if using DOM a data
 		 * source.
@@ -9511,7 +9511,7 @@
 	
 		/**
 		 * Per cell filtering data cache. As per the sort data cache, used to
-		 * increase the performance of the filtering in DataTables
+		 * increase the performance of the filtering in com.bilibili.cn.com.DataTables
 		 *  @type array
 		 *  @default null
 		 *  @private
@@ -9530,7 +9530,7 @@
 		"_sFilterRow": null,
 	
 		/**
-		 * Cache of the class name that DataTables has applied to the row, so we
+		 * Cache of the class name that com.bilibili.cn.com.DataTables has applied to the row, so we
 		 * can quickly look at this variable rather than needing to do a DOM check
 		 * on className for the nTr property.
 		 *  @type string
@@ -9541,7 +9541,7 @@
 	
 		/**
 		 * Denote if the original data source was from the DOM, or the data source
-		 * object. This is used for invalidating data, so DataTables can
+		 * object. This is used for invalidating data, so com.bilibili.cn.com.DataTables can
 		 * automatically read data from the original source, unless uninstructed
 		 * otherwise.
 		 *  @type string
@@ -9562,13 +9562,13 @@
 	
 	
 	/**
-	 * Template object for the column information object in DataTables. This object
+	 * Template object for the column information object in com.bilibili.cn.com.DataTables. This object
 	 * is held in the settings aoColumns array and contains all the information that
-	 * DataTables needs about each individual column.
+	 * com.bilibili.cn.com.DataTables needs about each individual column.
 	 *
 	 * Note that this object is related to {@link DataTable.defaults.column}
-	 * but this one is the internal data store for DataTables's cache of columns.
-	 * It should NOT be manipulated outside of DataTables. Any configuration should
+	 * but this one is the internal data store for com.bilibili.cn.com.DataTables's cache of columns.
+	 * It should NOT be manipulated outside of com.bilibili.cn.com.DataTables. Any configuration should
 	 * be done through the initialisation options.
 	 *  @namespace
 	 */
@@ -9655,7 +9655,7 @@
 	
 		/**
 		 * Function to get data from a cell in a column. You should <b>never</b>
-		 * access data directly through _aData internally in DataTables - always use
+		 * access data directly through _aData internally in com.bilibili.cn.com.DataTables - always use
 		 * the method attached to this property. It allows mData to function as
 		 * required. This function is automatically assigned by the column
 		 * initialisation method
@@ -9671,7 +9671,7 @@
 	
 		/**
 		 * Function to set data for a cell in the column. You should <b>never</b>
-		 * set the data directly to _aData internally in DataTables - always use
+		 * set the data directly to _aData internally in com.bilibili.cn.com.DataTables - always use
 		 * this method. It allows mData to function as required. This function
 		 * is automatically assigned by the column initialisation method
 		 *  @type function
@@ -9711,7 +9711,7 @@
 	
 		/**
 		 * Unique footer TH/TD element for this column (if there is one). Not used
-		 * in DataTables as such, but can be used for plug-ins to reference the
+		 * in com.bilibili.cn.com.DataTables as such, but can be used for plug-ins to reference the
 		 * footer for each column.
 		 *  @type node
 		 *  @default null
@@ -9726,7 +9726,7 @@
 		"sClass": null,
 	
 		/**
-		 * When DataTables calculates the column widths to assign to each column,
+		 * When com.bilibili.cn.com.DataTables calculates the column widths to assign to each column,
 		 * it finds the longest string in each column and then constructs a
 		 * temporary table and reads the widths from that. The problem with this
 		 * is that "mmm" is much wider then "iiii", but the latter is a longer
@@ -9808,14 +9808,14 @@
 	
 	/*
 	 * Developer note: The properties of the object below are given in Hungarian
-	 * notation, that was used as the interface for DataTables prior to v1.10, however
+	 * notation, that was used as the interface for com.bilibili.cn.com.DataTables prior to v1.10, however
 	 * from v1.10 onwards the primary interface is camel case. In order to avoid
 	 * breaking backwards compatibility utterly with this change, the Hungarian
 	 * version is still, internally the primary interface, but is is not documented
 	 * - hence the @name tags in each doc comment. This allows a Javascript function
 	 * to create a map from Hungarian notation to camel case (going the other direction
 	 * would require each property to be listed, which would at around 3K to the size
-	 * of DataTables, while this method is about a 0.5K hit.
+	 * of com.bilibili.cn.com.DataTables, while this method is about a 0.5K hit.
 	 *
 	 * Ultimately this does pave the way for Hungarian notation to be dropped
 	 * completely, but that is a massive amount of work and will break current
@@ -9823,7 +9823,7 @@
 	 */
 	
 	/**
-	 * Initialisation options that can be given to DataTables at initialisation
+	 * Initialisation options that can be given to com.bilibili.cn.com.DataTables at initialisation
 	 * time.
 	 *  @namespace
 	 */
@@ -9891,7 +9891,7 @@
 	
 	
 		/**
-		 * If ordering is enabled, then DataTables will perform a first pass sort on
+		 * If ordering is enabled, then com.bilibili.cn.com.DataTables will perform a first pass sort on
 		 * initialisation. You can define which column(s) the sort is performed
 		 * upon, and the sorting direction, with this variable. The `sorting` array
 		 * should contain an array for each column to be sorted initially containing
@@ -9944,7 +9944,7 @@
 	
 	
 		/**
-		 * DataTables can be instructed to load data to display in the table from a
+		 * com.bilibili.cn.com.DataTables can be instructed to load data to display in the table from a
 		 * Ajax source. This option defines how that Ajax call is made and where to.
 		 *
 		 * The `ajax` property has three different modes of operation, depending on
@@ -9958,41 +9958,41 @@
 		 * --------
 		 *
 		 * As a string, the `ajax` property simply defines the URL from which
-		 * DataTables will load data.
+		 * com.bilibili.cn.com.DataTables will load data.
 		 *
 		 * `object`
 		 * --------
 		 *
 		 * As an object, the parameters in the object are passed to
 		 * [jQuery.ajax](http://api.jquery.com/jQuery.ajax/) allowing fine control
-		 * of the Ajax request. DataTables has a number of default parameters which
+		 * of the Ajax request. com.bilibili.cn.com.DataTables has a number of default parameters which
 		 * you can override using this option. Please refer to the jQuery
 		 * documentation for a full description of the options available, although
-		 * the following parameters provide additional options in DataTables or
+		 * the following parameters provide additional options in com.bilibili.cn.com.DataTables or
 		 * require special consideration:
 		 *
 		 * * `data` - As with jQuery, `data` can be provided as an object, but it
-		 *   can also be used as a function to manipulate the data DataTables sends
+		 *   can also be used as a function to manipulate the data com.bilibili.cn.com.DataTables sends
 		 *   to the server. The function takes a single parameter, an object of
-		 *   parameters with the values that DataTables has readied for sending. An
-		 *   object may be returned which will be merged into the DataTables
+		 *   parameters with the values that com.bilibili.cn.com.DataTables has readied for sending. An
+		 *   object may be returned which will be merged into the com.bilibili.cn.com.DataTables
 		 *   defaults, or you can add the items to the object that was passed in and
 		 *   not return anything from the function. This supersedes `fnServerParams`
-		 *   from DataTables 1.9-.
+		 *   from com.bilibili.cn.com.DataTables 1.9-.
 		 *
-		 * * `dataSrc` - By default DataTables will look for the property `data` (or
-		 *   `aaData` for compatibility with DataTables 1.9-) when obtaining data
+		 * * `dataSrc` - By default com.bilibili.cn.com.DataTables will look for the property `data` (or
+		 *   `aaData` for compatibility with com.bilibili.cn.com.DataTables 1.9-) when obtaining data
 		 *   from an Ajax source or for server-side processing - this parameter
 		 *   allows that property to be changed. You can use Javascript dotted
 		 *   object notation to get a data source for multiple levels of nesting, or
 		 *   it my be used as a function. As a function it takes a single parameter,
 		 *   the JSON returned from the server, which can be manipulated as
-		 *   required, with the returned value being that used by DataTables as the
+		 *   required, with the returned value being that used by com.bilibili.cn.com.DataTables as the
 		 *   data source for the table. This supersedes `sAjaxDataProp` from
-		 *   DataTables 1.9-.
+		 *   com.bilibili.cn.com.DataTables 1.9-.
 		 *
 		 * * `success` - Should not be overridden it is used internally in
-		 *   DataTables. To manipulate / transform the data returned by the server
+		 *   com.bilibili.cn.com.DataTables. To manipulate / transform the data returned by the server
 		 *   use `ajax.dataSrc`, or use `ajax` as a function (see below).
 		 *
 		 * `function`
@@ -10010,9 +10010,9 @@
 		 * 2. _function_ - Callback function that must be executed when the required
 		 *    data has been obtained. That data should be passed into the callback
 		 *    as the only parameter
-		 * 3. _object_ - DataTables settings object for the table
+		 * 3. _object_ - com.bilibili.cn.com.DataTables settings object for the table
 		 *
-		 * Note that this supersedes `fnServerData` from DataTables 1.9-.
+		 * Note that this supersedes `fnServerData` from com.bilibili.cn.com.DataTables 1.9-.
 		 *
 		 *  @type string|object|function
 		 *  @default null
@@ -10023,7 +10023,7 @@
 		 *
 		 * @example
 		 *   // Get JSON data from a file via Ajax.
-		 *   // Note DataTables expects data in the form `{ data: [ ...data... ] }` by default).
+		 *   // Note com.bilibili.cn.com.DataTables expects data in the form `{ data: [ ...data... ] }` by default).
 		 *   $('#example').dataTable( {
 		 *     "ajax": "data.json"
 		 *   } );
@@ -10102,7 +10102,7 @@
 	
 		/**
 		 * This parameter allows you to readily specify the entries in the length drop
-		 * down menu that DataTables shows when pagination is enabled. It can be
+		 * down menu that com.bilibili.cn.com.DataTables shows when pagination is enabled. It can be
 		 * either a 1D array of options which will be used for both the displayed
 		 * option and the value, or a 2D array which will use the array in the first
 		 * position as the value, and the array in the second position as the
@@ -10191,7 +10191,7 @@
 	
 		/**
 		 * An array of CSS classes that should be applied to displayed rows. This
-		 * array may be of any length, and DataTables will apply each class
+		 * array may be of any length, and com.bilibili.cn.com.DataTables will apply each class
 		 * sequentially, looping when required.
 		 *  @type array
 		 *  @default null <i>Will take the values determined by the `oClasses.stripe*`
@@ -10231,9 +10231,9 @@
 	
 	
 		/**
-		 * Deferred rendering can provide DataTables with a huge speed boost when you
+		 * Deferred rendering can provide com.bilibili.cn.com.DataTables with a huge speed boost when you
 		 * are using an Ajax or JS data source for the table. This option, when set to
-		 * true, will cause DataTables to defer the creation of the table elements for
+		 * true, will cause com.bilibili.cn.com.DataTables to defer the creation of the table elements for
 		 * each row until they are needed for a draw - saving a significant amount of
 		 * time.
 		 *  @type boolean
@@ -10282,11 +10282,11 @@
 	
 	
 		/**
-		 * Enable or disable filtering of data. Filtering in DataTables is "smart" in
+		 * Enable or disable filtering of data. Filtering in com.bilibili.cn.com.DataTables is "smart" in
 		 * that it allows the end user to input multiple words (space separated) and
 		 * will match a row containing those words, even if not in the order that was
 		 * specified (this allow matching across multiple columns). Note that if you
-		 * wish to use filtering in DataTables this must remain 'true' - to remove the
+		 * wish to use filtering in com.bilibili.cn.com.DataTables this must remain 'true' - to remove the
 		 * default filtering input box and retain filtering abilities, please use
 		 * {@link DataTable.defaults.dom}.
 		 *  @type boolean
@@ -10327,7 +10327,7 @@
 	
 		/**
 		 * Enable jQuery UI ThemeRoller support (required as ThemeRoller requires some
-		 * slightly different and additional mark-up from what DataTables has
+		 * slightly different and additional mark-up from what com.bilibili.cn.com.DataTables has
 		 * traditionally used).
 		 *  @type boolean
 		 *  @default false
@@ -10404,11 +10404,11 @@
 	
 	
 		/**
-		 * Retrieve the DataTables object for the given selector. Note that if the
-		 * table has already been initialised, this parameter will cause DataTables
+		 * Retrieve the com.bilibili.cn.com.DataTables object for the given selector. Note that if the
+		 * table has already been initialised, this parameter will cause com.bilibili.cn.com.DataTables
 		 * to simply return the object that has already been set up - it will not take
 		 * account of any changes you might have made to the initialisation object
-		 * passed to DataTables (setting this parameter to true is an acknowledgement
+		 * passed to com.bilibili.cn.com.DataTables (setting this parameter to true is an acknowledgement
 		 * that you understand this). `destroy` can be used to reinitialise a table if
 		 * you need.
 		 *  @type boolean
@@ -10442,11 +10442,11 @@
 	
 	
 		/**
-		 * When vertical (y) scrolling is enabled, DataTables will force the height of
+		 * When vertical (y) scrolling is enabled, com.bilibili.cn.com.DataTables will force the height of
 		 * the table's viewport to the given height at all times (useful for layout).
 		 * However, this can look odd when filtering data down to a small data set,
 		 * and the footer is left "floating" further down. This parameter (when
-		 * enabled) will cause DataTables to collapse the table's viewport down when
+		 * enabled) will cause com.bilibili.cn.com.DataTables to collapse the table's viewport down when
 		 * the result set will fit within the given Y height.
 		 *  @type boolean
 		 *  @default false
@@ -10466,8 +10466,8 @@
 	
 	
 		/**
-		 * Configure DataTables to use server-side processing. Note that the
-		 * `ajax` parameter must also be given in order to give DataTables a
+		 * Configure com.bilibili.cn.com.DataTables to use server-side processing. Note that the
+		 * `ajax` parameter must also be given in order to give com.bilibili.cn.com.DataTables a
 		 * source to obtain the required data for each draw.
 		 *  @type boolean
 		 *  @default false
@@ -10507,7 +10507,7 @@
 	
 	
 		/**
-		 * Enable or display DataTables' ability to sort multiple columns at the
+		 * Enable or display com.bilibili.cn.com.DataTables' ability to sort multiple columns at the
 		 * same time (activated by shift-click by the user).
 		 *  @type boolean
 		 *  @default true
@@ -10527,7 +10527,7 @@
 	
 	
 		/**
-		 * Allows control over whether DataTables should use the top (true) unique
+		 * Allows control over whether com.bilibili.cn.com.DataTables should use the top (true) unique
 		 * cell that is found for a single column, or the bottom (false - default).
 		 * This is useful when using complex headers.
 		 *  @type boolean
@@ -10625,7 +10625,7 @@
 		 * This function is called on every 'draw' event, and allows you to
 		 * dynamically modify any aspect you want about the created DOM.
 		 *  @type function
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *
 		 *  @dtopt Callbacks
 		 *  @name DataTable.defaults.drawCallback
@@ -10634,7 +10634,7 @@
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
 		 *        "drawCallback": function( settings ) {
-		 *          alert( 'DataTables has redrawn the table' );
+		 *          alert( 'com.bilibili.cn.com.DataTables has redrawn the table' );
 		 *        }
 		 *      } );
 		 *    } );
@@ -10672,14 +10672,14 @@
 	
 		/**
 		 * When rendering large numbers in the information element for the table
-		 * (i.e. "Showing 1 to 10 of 57 entries") DataTables will render large numbers
+		 * (i.e. "Showing 1 to 10 of 57 entries") com.bilibili.cn.com.DataTables will render large numbers
 		 * to have a comma separator for the 'thousands' units (e.g. 1 million is
 		 * rendered as "1,000,000") to help readability for the end user. This
-		 * function will override the default method DataTables uses.
+		 * function will override the default method com.bilibili.cn.com.DataTables uses.
 		 *  @type function
 		 *  @member
 		 *  @param {int} toFormat number to be formatted
-		 *  @returns {string} formatted string for DataTables to show the number
+		 *  @returns {string} formatted string for com.bilibili.cn.com.DataTables to show the number
 		 *
 		 *  @dtopt Callbacks
 		 *  @name DataTable.defaults.formatNumber
@@ -10737,17 +10737,17 @@
 		/**
 		 * The information element can be used to convey information about the current
 		 * state of the table. Although the internationalisation options presented by
-		 * DataTables are quite capable of dealing with most customisations, there may
+		 * com.bilibili.cn.com.DataTables are quite capable of dealing with most customisations, there may
 		 * be times where you wish to customise the string further. This callback
 		 * allows you to do exactly that.
 		 *  @type function
-		 *  @param {object} oSettings DataTables settings object
+		 *  @param {object} oSettings com.bilibili.cn.com.DataTables settings object
 		 *  @param {int} start Starting position in data for the draw
 		 *  @param {int} end End position in data for the draw
 		 *  @param {int} max Total number of rows in the table (regardless of
 		 *    filtering)
 		 *  @param {int} total Total number of rows in the data set, after filtering
-		 *  @param {string} pre The string that DataTables has formatted using it's
+		 *  @param {string} pre The string that com.bilibili.cn.com.DataTables has formatted using it's
 		 *    own rules
 		 *  @returns {string} The string to be displayed in the information element.
 		 *
@@ -10765,12 +10765,12 @@
 	
 	
 		/**
-		 * Called when the table has been initialised. Normally DataTables will
+		 * Called when the table has been initialised. Normally com.bilibili.cn.com.DataTables will
 		 * initialise sequentially and there will be no need for this function,
 		 * however, this does not hold true when using external language information
 		 * since that is obtained using an async XHR call.
 		 *  @type function
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @param {object} json The JSON object request from the server - only
 		 *    present if client-side Ajax sourced data is used
 		 *
@@ -10781,7 +10781,7 @@
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
 		 *        "initComplete": function(settings, json) {
-		 *          alert( 'DataTables has finished its initialisation.' );
+		 *          alert( 'com.bilibili.cn.com.DataTables has finished its initialisation.' );
 		 *        }
 		 *      } );
 		 *    } )
@@ -10794,7 +10794,7 @@
 		 * draw by returning false, any other return (including undefined) results in
 		 * the full draw occurring).
 		 *  @type function
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @returns {boolean} False will cancel the draw, anything else (including no
 		 *    return) will allow it to complete.
 		 *
@@ -10859,7 +10859,7 @@
 		 *    to the server
 		 *  @param {function} callback to be called on completion of the data get
 		 *    process that will draw the data on the page.
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *
 		 *  @dtopt Callbacks
 		 *  @dtopt Server-side
@@ -10878,10 +10878,10 @@
 		 * request - for example custom filtering information, and this callback
 		 * function makes it trivial to send extra information to the server. The
 		 * passed in parameter is the data set that has been constructed by
-		 * DataTables, and you can add to this or modify it as you require.
+		 * com.bilibili.cn.com.DataTables, and you can add to this or modify it as you require.
 		 *  @type function
 		 *  @param {array} data Data array (array of objects which are name/value
-		 *    pairs) that has been constructed by DataTables and will be sent to the
+		 *    pairs) that has been constructed by com.bilibili.cn.com.DataTables and will be sent to the
 		 *    server. In the case of Ajax sourced data with server-side processing
 		 *    this will be an empty array, for server-side processing there will be a
 		 *    significant number of parameters!
@@ -10899,14 +10899,14 @@
 	
 		/**
 		 * Load the table state. With this function you can define from where, and how, the
-		 * state of a table is loaded. By default DataTables will load from `localStorage`
+		 * state of a table is loaded. By default com.bilibili.cn.com.DataTables will load from `localStorage`
 		 * but you might wish to use a server-side database or cookies.
 		 *  @type function
 		 *  @member
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @param {object} callback Callback that can be executed when done. It
 		 *    should be passed the loaded state object.
-		 *  @return {object} The DataTables state object to be loaded
+		 *  @return {object} The com.bilibili.cn.com.DataTables state object to be loaded
 		 *
 		 *  @dtopt Callbacks
 		 *  @name DataTable.defaults.stateLoadCallback
@@ -10945,7 +10945,7 @@
 		 * plug-in authors, you should use the `stateLoadParams` event to load parameters for
 		 * a plug-in.
 		 *  @type function
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @param {object} data The state object that is to be loaded
 		 *
 		 *  @dtopt Callbacks
@@ -10978,9 +10978,9 @@
 	
 		/**
 		 * Callback that is called when the state has been loaded from the state saving method
-		 * and the DataTables settings object has been modified as a result of the loaded state.
+		 * and the com.bilibili.cn.com.DataTables settings object has been modified as a result of the loaded state.
 		 *  @type function
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @param {object} data The state object that was loaded
 		 *
 		 *  @dtopt Callbacks
@@ -11002,11 +11002,11 @@
 	
 		/**
 		 * Save the table state. This function allows you to define where and how the state
-		 * information for the table is stored By default DataTables will use `localStorage`
+		 * information for the table is stored By default com.bilibili.cn.com.DataTables will use `localStorage`
 		 * but you might wish to use a server-side database or cookies.
 		 *  @type function
 		 *  @member
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @param {object} data The state object to be saved
 		 *
 		 *  @dtopt Callbacks
@@ -11046,7 +11046,7 @@
 		 * other state properties or modification. Note that for plug-in authors, you should
 		 * use the `stateSaveParams` event to save parameters for a plug-in.
 		 *  @type function
-		 *  @param {object} settings DataTables settings object
+		 *  @param {object} settings com.bilibili.cn.com.DataTables settings object
 		 *  @param {object} data The state object to be saved
 		 *
 		 *  @dtopt Callbacks
@@ -11087,11 +11087,11 @@
 	
 	
 		/**
-		 * When enabled DataTables will not make a request to the server for the first
+		 * When enabled com.bilibili.cn.com.DataTables will not make a request to the server for the first
 		 * page draw - rather it will use the data already on the page (no sorting etc
 		 * will be applied to it), thus saving on an XHR at load time. `deferLoading`
 		 * is used to indicate that deferred loading is required, but it is also used
-		 * to tell DataTables how many records there are in the full table (allowing
+		 * to tell com.bilibili.cn.com.DataTables how many records there are in the full table (allowing
 		 * the information element and pagination to be displayed correctly). In the case
 		 * where a filtering is applied to the table on initial load, this can be
 		 * indicated by giving the parameter as an array, where the first element is
@@ -11151,7 +11151,7 @@
 	
 	
 		/**
-		 * Define the starting point for data display when using DataTables with
+		 * Define the starting point for data display when using com.bilibili.cn.com.DataTables with
 		 * pagination. Note that this parameter is the number of records, rather than
 		 * the page number, so if you have 10 records per page and want to start on
 		 * the third page, it should be "20".
@@ -11172,7 +11172,7 @@
 	
 	
 		/**
-		 * By default DataTables allows keyboard navigation of the table (sorting, paging,
+		 * By default com.bilibili.cn.com.DataTables allows keyboard navigation of the table (sorting, paging,
 		 * and filtering) by adding a `tabindex` attribute to the required elements. This
 		 * allows you to tab through the controls and press the enter key to activate them.
 		 * The tabindex is default 0, meaning that the tab follows the flow of the document.
@@ -11195,7 +11195,7 @@
 	
 	
 		/**
-		 * Classes that DataTables assigns to the various components and features
+		 * Classes that com.bilibili.cn.com.DataTables assigns to the various components and features
 		 * that it adds to the HTML table. This allows classes to be configured
 		 * during initialisation in addition to through the static
 		 * {@link DataTable.ext.oStdClasses} object).
@@ -11206,7 +11206,7 @@
 	
 	
 		/**
-		 * All strings that DataTables uses in the user interface that it creates
+		 * All strings that com.bilibili.cn.com.DataTables uses in the user interface that it creates
 		 * are defined in this object, allowing you to modified them individually or
 		 * completely replace them all as required.
 		 *  @namespace
@@ -11269,7 +11269,7 @@
 			},
 	
 			/**
-			 * Pagination string used by DataTables for the built-in pagination
+			 * Pagination string used by com.bilibili.cn.com.DataTables for the built-in pagination
 			 * control types.
 			 *  @namespace
 			 *  @name DataTable.defaults.language.paginate
@@ -11490,7 +11490,7 @@
 	
 			/**
 			 * This decimal place operator is a little different from the other
-			 * language options since DataTables doesn't output floating point
+			 * language options since com.bilibili.cn.com.DataTables doesn't output floating point
 			 * numbers, so it won't ever use this for display of a number. Rather,
 			 * what this parameter does is modify the sort methods of the table so
 			 * that numbers which are in a format which has a character other than
@@ -11520,7 +11520,7 @@
 	
 	
 			/**
-			 * DataTables has a build in number formatter (`formatNumber`) which is
+			 * com.bilibili.cn.com.DataTables has a build in number formatter (`formatNumber`) which is
 			 * used to format large numbers that are used in the table information.
 			 * By default a comma is used, but this can be trivially changed to any
 			 * character you wish with this parameter.
@@ -11584,7 +11584,7 @@
 	
 	
 			/**
-			 * When using Ajax sourced data and during the first draw when DataTables is
+			 * When using Ajax sourced data and during the first draw when com.bilibili.cn.com.DataTables is
 			 * gathering the data, this message is shown in an empty row in the table to
 			 * indicate to the end user the the data is being loaded. Note that this
 			 * parameter is not used when loading data by server-side processing, just
@@ -11620,7 +11620,7 @@
 			 *    $(document).ready( function() {
 			 *      $('#example').dataTable( {
 			 *        "language": {
-			 *          "processing": "DataTables is currently busy"
+			 *          "processing": "com.bilibili.cn.com.DataTables is currently busy"
 			 *        }
 			 *      } );
 			 *    } );
@@ -11676,7 +11676,7 @@
 	
 			/**
 			 * All of the language information can be stored in a file on the
-			 * server-side, which DataTables will look up if this parameter is passed.
+			 * server-side, which com.bilibili.cn.com.DataTables will look up if this parameter is passed.
 			 * It must store the URL of the language file, which is in a JSON format,
 			 * and the object has the same properties as the oLanguage object in the
 			 * initialiser object (i.e. the above parameters). Please refer to one of
@@ -11728,7 +11728,7 @@
 		 * defined, but all other parameters are optional. When `regex` is true,
 		 * the search string will be treated as a regular expression, when false
 		 * (default) it will be treated as a straight string. When `smart`
-		 * DataTables will use it's smart filtering methods (to word match at
+		 * com.bilibili.cn.com.DataTables will use it's smart filtering methods (to word match at
 		 * any point in the data), when false this will not be done.
 		 *  @namespace
 		 *  @extends DataTable.models.oSearch
@@ -11750,8 +11750,8 @@
 		 * __Deprecated__ The functionality provided by this parameter has now been
 		 * superseded by that provided through `ajax`, which should be used instead.
 		 *
-		 * By default DataTables will look for the property `data` (or `aaData` for
-		 * compatibility with DataTables 1.9-) when obtaining data from an Ajax
+		 * By default com.bilibili.cn.com.DataTables will look for the property `data` (or `aaData` for
+		 * compatibility with com.bilibili.cn.com.DataTables 1.9-) when obtaining data from an Ajax
 		 * source or for server-side processing - this parameter allows that
 		 * property to be changed. You can use Javascript dotted object notation to
 		 * get a data source for multiple levels of nesting.
@@ -11771,7 +11771,7 @@
 		 * __Deprecated__ The functionality provided by this parameter has now been
 		 * superseded by that provided through `ajax`, which should be used instead.
 		 *
-		 * You can instruct DataTables to load data from an external
+		 * You can instruct com.bilibili.cn.com.DataTables to load data from an external
 		 * source using this parameter (use aData if you want to pass data in you
 		 * already have). Simply provide a url a JSON object can be obtained from.
 		 *  @type string
@@ -11788,7 +11788,7 @@
 	
 		/**
 		 * This initialisation variable allows you to specify exactly where in the
-		 * DOM you want DataTables to inject the various controls it adds to the page
+		 * DOM you want com.bilibili.cn.com.DataTables to inject the various controls it adds to the page
 		 * (for example you might want the pagination controls at the top of the
 		 * table). DIV elements (with or without a custom class) can also be added to
 		 * aid styling. The follow syntax is used:
@@ -11842,7 +11842,7 @@
 	
 		/**
 		 * Search delay option. This will throttle full table searches that use the
-		 * DataTables provided search input element (it does not effect calls to
+		 * com.bilibili.cn.com.DataTables provided search input element (it does not effect calls to
 		 * `dt-api search()`, providing a delay before the search is made.
 		 *  @type integer
 		 *  @default 0
@@ -11861,7 +11861,7 @@
 	
 	
 		/**
-		 * DataTables features six different built-in options for the buttons to
+		 * com.bilibili.cn.com.DataTables features six different built-in options for the buttons to
 		 * display for pagination control:
 		 *
 		 * * `numbers` - Page number buttons only
@@ -11980,10 +11980,10 @@
 	
 	
 		/**
-		 * DataTables makes use of renderers when displaying HTML elements for
+		 * com.bilibili.cn.com.DataTables makes use of renderers when displaying HTML elements for
 		 * a table. These renderers can be added or modified by plug-ins to
 		 * generate suitable mark-up for a site. For example the Bootstrap
-		 * integration plug-in for DataTables uses a paging button renderer to
+		 * integration plug-in for com.bilibili.cn.com.DataTables uses a paging button renderer to
 		 * display pagination buttons in the mark-up required by Bootstrap.
 		 *
 		 * For further information about the renderers available see
@@ -11998,7 +11998,7 @@
 	
 	
 		/**
-		 * Set the data property name that DataTables should use to get a row's id
+		 * Set the data property name that com.bilibili.cn.com.DataTables should use to get a row's id
 		 * to set as the `id` property in the node.
 		 *  @type string
 		 *  @default DT_RowId
@@ -12018,7 +12018,7 @@
 	 */
 	
 	/**
-	 * Column options that can be given to DataTables at initialisation time.
+	 * Column options that can be given to com.bilibili.cn.com.DataTables at initialisation time.
 	 *  @namespace
 	 */
 	DataTable.defaults.column = {
@@ -12235,9 +12235,9 @@
 	
 	
 		/**
-		 * This parameter has been replaced by `data` in DataTables to ensure naming
+		 * This parameter has been replaced by `data` in com.bilibili.cn.com.DataTables to ensure naming
 		 * consistency. `dataProp` can still be used, as there is backwards
-		 * compatibility in DataTables for this option, but it is strongly
+		 * compatibility in com.bilibili.cn.com.DataTables for this option, but it is strongly
 		 * recommended that you use `data` in preference to `dataProp`.
 		 *  @name DataTable.defaults.column.dataProp
 		 */
@@ -12249,16 +12249,16 @@
 		 * number of different ways which effect its behaviour:
 		 *
 		 * * `integer` - treated as an array index for the data source. This is the
-		 *   default that DataTables uses (incrementally increased for each column).
+		 *   default that com.bilibili.cn.com.DataTables uses (incrementally increased for each column).
 		 * * `string` - read an object property from the data source. There are
 		 *   three 'special' options that can be used in the string to alter how
-		 *   DataTables reads the data from the source object:
+		 *   com.bilibili.cn.com.DataTables reads the data from the source object:
 		 *    * `.` - Dotted Javascript notation. Just as you use a `.` in
 		 *      Javascript to read from nested objects, so to can the options
 		 *      specified in `data`. For example: `browser.version` or
 		 *      `browser.name`. If your object parameter name contains a period, use
 		 *      `\\` to escape it - i.e. `first\\.name`.
-		 *    * `[]` - Array notation. DataTables can automatically combine data
+		 *    * `[]` - Array notation. com.bilibili.cn.com.DataTables can automatically combine data
 		 *      from and array source, joining the data with the characters provided
 		 *      between the two brackets. For example: `name[, ]` would provide a
 		 *      comma-space separated list from the source array. If no characters
@@ -12280,7 +12280,7 @@
 		 *    * `render` - When null is used for the `data` option and the `render`
 		 *      option is specified for the column, the whole data source for the
 		 *      row is used for the renderer.
-		 * * `function` - the function given will be executed whenever DataTables
+		 * * `function` - the function given will be executed whenever com.bilibili.cn.com.DataTables
 		 *   needs to set or get the data for a cell in the column. The function
 		 *   takes three parameters:
 		 *    * Parameters:
@@ -12288,7 +12288,7 @@
 		 *      * `{string}` The type call data requested - this will be 'set' when
 		 *        setting data or 'filter', 'display', 'type', 'sort' or undefined
 		 *        when gathering data. Note that when `undefined` is given for the
-		 *        type DataTables expects to get the raw data for the object back<
+		 *        type com.bilibili.cn.com.DataTables expects to get the raw data for the object back<
 		 *      * `{*}` Data to set when the second parameter is 'set'.
 		 *    * Return:
 		 *      * The return value from the function is not required when 'set' is
@@ -12299,10 +12299,10 @@
 		 * formatting of data for output, you will likely want to use `render` which
 		 * is simply a getter and thus simpler to use.
 		 *
-		 * Note that prior to DataTables 1.9.2 `data` was called `mDataProp`. The
+		 * Note that prior to com.bilibili.cn.com.DataTables 1.9.2 `data` was called `mDataProp`. The
 		 * name change reflects the flexibility of this property and is consistent
 		 * with the naming of mRender. If 'mDataProp' is given, then it will still
-		 * be used by DataTables, as it automatically maps the old name to the new
+		 * be used by com.bilibili.cn.com.DataTables, as it automatically maps the old name to the new
 		 * if required.
 		 *
 		 *  @type string|int|function|null
@@ -12425,16 +12425,16 @@
 		 * behaviour:
 		 *
 		 * * `integer` - treated as an array index for the data source. This is the
-		 *   default that DataTables uses (incrementally increased for each column).
+		 *   default that com.bilibili.cn.com.DataTables uses (incrementally increased for each column).
 		 * * `string` - read an object property from the data source. There are
 		 *   three 'special' options that can be used in the string to alter how
-		 *   DataTables reads the data from the source object:
+		 *   com.bilibili.cn.com.DataTables reads the data from the source object:
 		 *    * `.` - Dotted Javascript notation. Just as you use a `.` in
 		 *      Javascript to read from nested objects, so to can the options
 		 *      specified in `data`. For example: `browser.version` or
 		 *      `browser.name`. If your object parameter name contains a period, use
 		 *      `\\` to escape it - i.e. `first\\.name`.
-		 *    * `[]` - Array notation. DataTables can automatically combine data
+		 *    * `[]` - Array notation. com.bilibili.cn.com.DataTables can automatically combine data
 		 *      from and array source, joining the data with the characters provided
 		 *      between the two brackets. For example: `name[, ]` would provide a
 		 *      comma-space separated list from the source array. If no characters
@@ -12446,13 +12446,13 @@
 		 *      function in a nested property or even `browser().version` to get an
 		 *      object property if the function called returns an object.
 		 * * `object` - use different data for the different data types requested by
-		 *   DataTables ('filter', 'display', 'type' or 'sort'). The property names
+		 *   com.bilibili.cn.com.DataTables ('filter', 'display', 'type' or 'sort'). The property names
 		 *   of the object is the data type the property refers to and the value can
 		 *   defined using an integer, string or function using the same rules as
 		 *   `render` normally does. Note that an `_` option _must_ be specified.
 		 *   This is the default value to use if you haven't specified a value for
-		 *   the data type requested by DataTables.
-		 * * `function` - the function given will be executed whenever DataTables
+		 *   the data type requested by com.bilibili.cn.com.DataTables.
+		 * * `function` - the function given will be executed whenever com.bilibili.cn.com.DataTables
 		 *   needs to set or get the data for a cell in the column. The function
 		 *   takes three parameters:
 		 *    * Parameters:
@@ -12596,7 +12596,7 @@
 		"sClass": "",
 	
 		/**
-		 * When DataTables calculates the column widths to assign to each column,
+		 * When com.bilibili.cn.com.DataTables calculates the column widths to assign to each column,
 		 * it finds the longest string in each column and then constructs a
 		 * temporary table and reads the widths from that. The problem with this
 		 * is that "mmm" is much wider then "iiii", but the latter is a longer
@@ -12673,10 +12673,10 @@
 	
 	
 		/**
-		 * This parameter is only used in DataTables' server-side processing. It can
+		 * This parameter is only used in com.bilibili.cn.com.DataTables' server-side processing. It can
 		 * be exceptionally useful to know what columns are being displayed on the
 		 * client side, and to map these to database fields. When defined, the names
-		 * also allow DataTables to reorder information from the server if it comes
+		 * also allow com.bilibili.cn.com.DataTables to reorder information from the server if it comes
 		 * back in an unexpected order (i.e. if you switch your columns around on the
 		 * client-side, your server-side code does not also need updating).
 		 *  @type string
@@ -12837,7 +12837,7 @@
 	
 		/**
 		 * Defining the width of the column, this parameter may take any CSS value
-		 * (3em, 20px etc). DataTables applies 'smart' widths to columns which have not
+		 * (3em, 20px etc). com.bilibili.cn.com.DataTables applies 'smart' widths to columns which have not
 		 * been given a specific width through this interface ensuring that the table
 		 * remains readable.
 		 *  @type string
@@ -12878,36 +12878,36 @@
 	
 	
 	/**
-	 * DataTables settings object - this holds all the information needed for a
+	 * com.bilibili.cn.com.DataTables settings object - this holds all the information needed for a
 	 * given table, including configuration, data and current application of the
-	 * table options. DataTables does not have a single instance for each DataTable
+	 * table options. com.bilibili.cn.com.DataTables does not have a single instance for each DataTable
 	 * with the settings attached to that instance, but rather instances of the
 	 * DataTable "class" are created on-the-fly as needed (typically by a
 	 * $().dataTable() call) and the settings object is then applied to that
 	 * instance.
 	 *
 	 * Note that this object is related to {@link DataTable.defaults} but this
-	 * one is the internal data store for DataTables's cache of columns. It should
-	 * NOT be manipulated outside of DataTables. Any configuration should be done
+	 * one is the internal data store for com.bilibili.cn.com.DataTables's cache of columns. It should
+	 * NOT be manipulated outside of com.bilibili.cn.com.DataTables. Any configuration should be done
 	 * through the initialisation options.
 	 *  @namespace
 	 *  @todo Really should attach the settings object to individual instances so we
 	 *    don't need to create new instances on each $().dataTable() call (if the
 	 *    table already exists). It would also save passing oSettings around and
 	 *    into every single function. However, this is a very significant
-	 *    architecture change for DataTables and will almost certainly break
+	 *    architecture change for com.bilibili.cn.com.DataTables and will almost certainly break
 	 *    backwards compatibility with older installations. This is something that
 	 *    will be done in 2.0.
 	 */
 	DataTable.models.oSettings = {
 		/**
-		 * Primary features of DataTables and their enablement state.
+		 * Primary features of com.bilibili.cn.com.DataTables and their enablement state.
 		 *  @namespace
 		 */
 		"oFeatures": {
 	
 			/**
-			 * Flag to say if DataTables should automatically try to calculate the
+			 * Flag to say if com.bilibili.cn.com.DataTables should automatically try to calculate the
 			 * optimum table and columns widths (true) or not (false).
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
@@ -12964,7 +12964,7 @@
 			"bPaginate": null,
 	
 			/**
-			 * Processing indicator enable flag whenever DataTables is enacting a
+			 * Processing indicator enable flag whenever com.bilibili.cn.com.DataTables is enacting a
 			 * user request - typically an Ajax request for server-side processing.
 			 * Note that this parameter will be set by the initialisation routine. To
 			 * set a default use {@link DataTable.defaults}.
@@ -12973,7 +12973,7 @@
 			"bProcessing": null,
 	
 			/**
-			 * Server-side processing enabled flag - when enabled DataTables will
+			 * Server-side processing enabled flag - when enabled com.bilibili.cn.com.DataTables will
 			 * get all data from the server for every draw - there is no filtering,
 			 * sorting or paging done on the client-side.
 			 * Note that this parameter will be set by the initialisation routine. To
@@ -13368,7 +13368,7 @@
 		"nTBody": null,
 	
 		/**
-		 * Cache the wrapper node (contains all DataTables controlled elements)
+		 * Cache the wrapper node (contains all com.bilibili.cn.com.DataTables controlled elements)
 		 *  @type node
 		 *  @default null
 		 */
@@ -13400,7 +13400,7 @@
 		"aoOpenRows": [],
 	
 		/**
-		 * Dictate the positioning of DataTables' control elements - see
+		 * Dictate the positioning of com.bilibili.cn.com.DataTables' control elements - see
 		 * {@link DataTable.model.oInit.sDom}.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
@@ -13663,7 +13663,7 @@
 		/**
 		 * Indicate that if multiple rows are in the header and there is more than
 		 * one unique cell per column, if the top one (true) or bottom one (false)
-		 * should be used for sorting / title by DataTables.
+		 * should be used for sorting / title by com.bilibili.cn.com.DataTables.
 		 * Note that this parameter will be set by the initialisation routine. To
 		 * set a default use {@link DataTable.defaults}.
 		 *  @type boolean
@@ -13735,14 +13735,14 @@
 		},
 	
 		/**
-		 * The DataTables object for this table
+		 * The com.bilibili.cn.com.DataTables object for this table
 		 *  @type object
 		 *  @default null
 		 */
 		"oInstance": null,
 	
 		/**
-		 * Unique identifier for each instance of the DataTables object. If there
+		 * Unique identifier for each instance of the com.bilibili.cn.com.DataTables object. If there
 		 * is an ID on the table node, then it takes that value, otherwise an
 		 * incrementing internal counter is used.
 		 *  @type string
@@ -13751,7 +13751,7 @@
 		"sInstance": null,
 	
 		/**
-		 * tabindex attribute value that is added to DataTables control elements, allowing
+		 * tabindex attribute value that is added to com.bilibili.cn.com.DataTables control elements, allowing
 		 * keyboard navigation of the table and its controls.
 		 */
 		"iTabIndex": 0,
@@ -13796,7 +13796,7 @@
 	};
 
 	/**
-	 * Extension object for DataTables that is used to provide all extension
+	 * Extension object for com.bilibili.cn.com.DataTables that is used to provide all extension
 	 * options.
 	 *
 	 * Note that the `DataTable.ext` object is available through
@@ -13808,10 +13808,10 @@
 	
 	
 	/**
-	 * DataTables extensions
+	 * com.bilibili.cn.com.DataTables extensions
 	 * 
 	 * This namespace acts as a collection area for plug-ins that can be used to
-	 * extend DataTables capabilities. Indeed many of the build in methods
+	 * extend com.bilibili.cn.com.DataTables capabilities. Indeed many of the build in methods
 	 * use this method to provide their own capabilities (sorting methods for
 	 * example).
 	 *
@@ -13822,9 +13822,9 @@
 	 */
 	DataTable.ext = _ext = {
 		/**
-		 * Buttons. For use with the Buttons extension for DataTables. This is
+		 * Buttons. For use with the Buttons extension for com.bilibili.cn.com.DataTables. This is
 		 * defined here so other extensions can define buttons regardless of load
-		 * order. It is _not_ used by DataTables core.
+		 * order. It is _not_ used by com.bilibili.cn.com.DataTables core.
 		 *
 		 *  @type object
 		 *  @default {}
@@ -13842,7 +13842,7 @@
 	
 	
 		/**
-		 * DataTables build type (expanded by the download builder)
+		 * com.bilibili.cn.com.DataTables build type (expanded by the download builder)
 		 *
 		 *  @type string
 		 */
@@ -13852,7 +13852,7 @@
 		/**
 		 * Error reporting.
 		 * 
-		 * How should DataTables report an error. Can take the value 'alert',
+		 * How should com.bilibili.cn.com.DataTables report an error. Can take the value 'alert',
 		 * 'throw', 'none' or a function.
 		 *
 		 *  @type string|function
@@ -13865,7 +13865,7 @@
 		 * Feature plug-ins.
 		 * 
 		 * This is an array of objects which describe the feature plug-ins that are
-		 * available to DataTables. These feature plug-ins are then available for
+		 * available to com.bilibili.cn.com.DataTables. These feature plug-ins are then available for
 		 * use through the `dom` initialisation option.
 		 * 
 		 * Each feature plug-in is described by an object which must have the
@@ -13877,14 +13877,14 @@
 		 *
 		 * The `fnInit` function has the following input parameters:
 		 *
-		 * 1. `{object}` DataTables settings object: see
+		 * 1. `{object}` com.bilibili.cn.com.DataTables settings object: see
 		 *    {@link DataTable.models.oSettings}
 		 *
 		 * And the following return is expected:
 		 * 
 		 * * {node|null} The element which contains your feature. Note that the
 		 *   return may also be void if your plug-in does not require to inject any
-		 *   DOM elements into DataTables control (`dom`) - for example this might
+		 *   DOM elements into com.bilibili.cn.com.DataTables control (`dom`) - for example this might
 		 *   be useful when developing a plug-in which allows table control via
 		 *   keyboard entry
 		 *
@@ -13913,7 +13913,7 @@
 		 *
 		 * Searching functions have the following input parameters:
 		 *
-		 * 1. `{object}` DataTables settings object: see
+		 * 1. `{object}` com.bilibili.cn.com.DataTables settings object: see
 		 *    {@link DataTable.models.oSettings}
 		 * 2. `{array|object}` Data for the row to be processed (same as the
 		 *    original format that was passed in as the data source, or an array
@@ -13926,7 +13926,7 @@
 		 * * {boolean} Include the row in the searched result set (true) or not
 		 *   (false)
 		 *
-		 * Note that as with the main search ability in DataTables, technically this
+		 * Note that as with the main search ability in com.bilibili.cn.com.DataTables, technically this
 		 * is "filtering", since it is subtractive. However, for consistency in
 		 * naming we call it searching here.
 		 *
@@ -14008,13 +14008,13 @@
 	
 		/**
 		 * Legacy configuration options. Enable and disable legacy options that
-		 * are available in DataTables.
+		 * are available in com.bilibili.cn.com.DataTables.
 		 *
 		 *  @type object
 		 */
 		legacy: {
 			/**
-			 * Enable / disable DataTables 1.9 compatible server-side processing
+			 * Enable / disable com.bilibili.cn.com.DataTables 1.9 compatible server-side processing
 			 * requests
 			 *
 			 *  @type boolean
@@ -14054,11 +14054,11 @@
 		 * * `{array}` - A nested array containing the above elements to add a
 		 *   containing 'DIV' element (might be useful for styling).
 		 *
-		 * Note that DataTables v1.9- used this object slightly differently whereby
+		 * Note that com.bilibili.cn.com.DataTables v1.9- used this object slightly differently whereby
 		 * an object with two functions would be defined for each plug-in. That
-		 * ability is still supported by DataTables 1.10+ to provide backwards
+		 * ability is still supported by com.bilibili.cn.com.DataTables 1.10+ to provide backwards
 		 * compatibility, but this option of use is now decremented and no longer
-		 * documented in DataTables 1.10+.
+		 * documented in com.bilibili.cn.com.DataTables 1.10+.
 		 *
 		 *  @type object
 		 *  @default {}
@@ -14082,13 +14082,13 @@
 		 * Ordering plug-ins - custom data source
 		 * 
 		 * The extension options for ordering of data available here is complimentary
-		 * to the default type based ordering that DataTables typically uses. It
+		 * to the default type based ordering that com.bilibili.cn.com.DataTables typically uses. It
 		 * allows much greater control over the the data that is being used to
 		 * order a column, but is necessarily therefore more complex.
 		 * 
 		 * This type of ordering is useful if you want to do ordering based on data
 		 * live from the DOM (for example the contents of an 'input' element) rather
-		 * than just the static string that DataTables knows of.
+		 * than just the static string that com.bilibili.cn.com.DataTables knows of.
 		 * 
 		 * The way these plug-ins work is that you create an array of the values you
 		 * wish to be ordering for the column in question and then return that
@@ -14099,7 +14099,7 @@
 		 *
 		 * The functions defined take two parameters:
 		 *
-		 * 1. `{object}` DataTables settings object: see
+		 * 1. `{object}` com.bilibili.cn.com.DataTables settings object: see
 		 *    {@link DataTable.models.oSettings}
 		 * 2. `{int}` Target column index
 		 *
@@ -14124,7 +14124,7 @@
 		/**
 		 * Type based plug-ins.
 		 *
-		 * Each column in DataTables has a type assigned to it, either by automatic
+		 * Each column in com.bilibili.cn.com.DataTables has a type assigned to it, either by automatic
 		 * detection or by direct assignment using the `type` option for the column.
 		 * The type of a column will effect how it is ordering and search (plug-ins
 		 * can also make use of the column type if required).
@@ -14136,13 +14136,13 @@
 			 * Type detection functions.
 			 *
 			 * The functions defined in this object are used to automatically detect
-			 * a column's type, making initialisation of DataTables super easy, even
+			 * a column's type, making initialisation of com.bilibili.cn.com.DataTables super easy, even
 			 * when complex data is in the table.
 			 *
 			 * The functions defined take two parameters:
 			 *
 		     *  1. `{*}` Data from the column cell to be analysed
-		     *  2. `{settings}` DataTables settings object. This can be used to
+		     *  2. `{settings}` com.bilibili.cn.com.DataTables settings object. This can be used to
 		     *     perform context specific type detection - for example detection
 		     *     based on language settings such as using a comma for a decimal
 		     *     place. Generally speaking the options from the settings will not
@@ -14186,7 +14186,7 @@
 			 * no search formatting will be performed.
 			 * 
 			 * Pre-processing of searching data plug-ins - When you assign the sType
-			 * for a column (or have it automatically detected for you by DataTables
+			 * for a column (or have it automatically detected for you by com.bilibili.cn.com.DataTables
 			 * or a type detection plug-in), you will typically be using this for
 			 * custom sorting, but it can also be used to provide custom searching
 			 * by allowing you to pre-processing the data and returning the data in
@@ -14217,7 +14217,7 @@
 			/**
 			 * Type based ordering.
 			 *
-			 * The column type tells DataTables what ordering to apply to the table
+			 * The column type tells com.bilibili.cn.com.DataTables what ordering to apply to the table
 			 * when a column is sorted upon. The order for each type that is defined,
 			 * is defined by the functions available in this object.
 			 *
@@ -14282,7 +14282,7 @@
 		},
 	
 		/**
-		 * Unique DataTables instance counter
+		 * Unique com.bilibili.cn.com.DataTables instance counter
 		 *
 		 * @type int
 		 * @private
@@ -14911,10 +14911,10 @@
 	} );
 	
 	/*
-	 * Public helper functions. These aren't used internally by DataTables, or
-	 * called by any of the options passed into DataTables, but they can be used
-	 * externally by developers working with DataTables. They are helper functions
-	 * to make working with DataTables a little bit easier.
+	 * Public helper functions. These aren't used internally by com.bilibili.cn.com.DataTables, or
+	 * called by any of the options passed into com.bilibili.cn.com.DataTables, but they can be used
+	 * externally by developers working with com.bilibili.cn.com.DataTables. They are helper functions
+	 * to make working with com.bilibili.cn.com.DataTables a little bit easier.
 	 */
 	
 	var __htmlEscapeEntities = function ( d ) {
@@ -15128,7 +15128,7 @@
 	$.fn.dataTableSettings = DataTable.settings;
 	$.fn.dataTableExt = DataTable.ext;
 
-	// With a capital `D` we return a DataTables API instance rather than a
+	// With a capital `D` we return a com.bilibili.cn.com.DataTables API instance rather than a
 	// jQuery object
 	$.fn.DataTable = function ( opts ) {
 		return $(this).dataTable( opts ).api();
@@ -15141,7 +15141,7 @@
 	} );
 
 
-	// Information about events fired by DataTables - for documentation.
+	// Information about events fired by com.bilibili.cn.com.DataTables - for documentation.
 	/**
 	 * Draw event, fired whenever the table is redrawn on the page, at the same
 	 * point as fnDrawCallback. This may be useful for binding events or
@@ -15149,7 +15149,7 @@
 	 *  @name DataTable#draw.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 */
 
 	/**
@@ -15158,7 +15158,7 @@
 	 *  @name DataTable#search.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 */
 
 	/**
@@ -15166,7 +15166,7 @@
 	 *  @name DataTable#page.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 */
 
 	/**
@@ -15174,16 +15174,16 @@
 	 *  @name DataTable#order.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 */
 
 	/**
-	 * DataTables initialisation complete event, fired when the table is fully
+	 * com.bilibili.cn.com.DataTables initialisation complete event, fired when the table is fully
 	 * drawn, including Ajax data loaded, if Ajax data is required.
 	 *  @name DataTable#init.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} oSettings DataTables settings object
+	 *  @param {object} oSettings com.bilibili.cn.com.DataTables settings object
 	 *  @param {object} json The JSON object request from the server - only
 	 *    present if client-side Ajax sourced data is used</li></ol>
 	 */
@@ -15192,11 +15192,11 @@
 	 * State save event, fired when the table has changed state a new state save
 	 * is required. This event allows modification of the state saving object
 	 * prior to actually doing the save, including addition or other state
-	 * properties (for plug-ins) or modification of a DataTables core property.
+	 * properties (for plug-ins) or modification of a com.bilibili.cn.com.DataTables core property.
 	 *  @name DataTable#stateSaveParams.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} oSettings DataTables settings object
+	 *  @param {object} oSettings com.bilibili.cn.com.DataTables settings object
 	 *  @param {object} json The state information to be saved
 	 */
 
@@ -15208,7 +15208,7 @@
 	 *  @name DataTable#stateLoadParams.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} oSettings DataTables settings object
+	 *  @param {object} oSettings com.bilibili.cn.com.DataTables settings object
 	 *  @param {object} json The saved state information
 	 */
 
@@ -15218,26 +15218,26 @@
 	 *  @name DataTable#stateLoaded.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} oSettings DataTables settings object
+	 *  @param {object} oSettings com.bilibili.cn.com.DataTables settings object
 	 *  @param {object} json The saved state information
 	 */
 
 	/**
-	 * Processing event, fired when DataTables is doing some kind of processing
+	 * Processing event, fired when com.bilibili.cn.com.DataTables is doing some kind of processing
 	 * (be it, order, searcg or anything else). It can be used to indicate to
 	 * the end user that there is something happening, or that something has
 	 * finished.
 	 *  @name DataTable#processing.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} oSettings DataTables settings object
-	 *  @param {boolean} bShow Flag for if DataTables is doing processing or not
+	 *  @param {object} oSettings com.bilibili.cn.com.DataTables settings object
+	 *  @param {boolean} bShow Flag for if com.bilibili.cn.com.DataTables is doing processing or not
 	 */
 
 	/**
 	 * Ajax (XHR) event, fired whenever an Ajax request is completed from a
 	 * request to made to the server for new data. This event is called before
-	 * DataTables processed the returned data, so it can also be used to pre-
+	 * com.bilibili.cn.com.DataTables processed the returned data, so it can also be used to pre-
 	 * process the data returned from the server, if needed.
 	 *
 	 * Note that this trigger is called in `fnServerData`, if you override
@@ -15246,7 +15246,7 @@
 	 *  @name DataTable#xhr.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 *  @param {object} json JSON returned from the server
 	 *
 	 *  @example
@@ -15272,7 +15272,7 @@
 	 *  @name DataTable#destroy.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 */
 
 	/**
@@ -15281,7 +15281,7 @@
 	 *  @name DataTable#length.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 *  @param {integer} len New length
 	 */
 
@@ -15290,7 +15290,7 @@
 	 *  @name DataTable#column-sizing.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 */
 
 	/**
@@ -15298,7 +15298,7 @@
 	 *  @name DataTable#column-visibility.dt
 	 *  @event
 	 *  @param {event} e jQuery event object
-	 *  @param {object} o DataTables settings object {@link DataTable.models.oSettings}
+	 *  @param {object} o com.bilibili.cn.com.DataTables settings object {@link DataTable.models.oSettings}
 	 *  @param {int} column Column index
 	 *  @param {bool} vis `false` if column now hidden, or `true` if visible
 	 */

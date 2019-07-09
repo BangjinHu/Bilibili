@@ -32,6 +32,186 @@
         SELECT * FROM user
     </select>
 
+    <select id="queryUsersForDataTable" parameterType="com.bilibili.cn.DataTables.condition.DTCondition" resultMap="userResultMap">
+        SELECT ${select} FROM user
+        <if test="where != ''">
+            WHERE ${where}
+        </if>
+        <if test="order != ''">
+            ORDER BY ${order}
+        </if>
+        <if test="limit != ''">
+            LIMIT ${limit}
+        </if>
+    </select>
+
+    <select id="countFilteredUsersForDataTable" parameterType="com.bilibili.cn.DataTables.condition.DTCondition" resultType="int">
+        SELECT COUNT(user_id) FROM user
+        <if test="where != ''">
+            WHERE ${where}
+        </if>
+    </select>
+
+    <select id="countTotalUsersForDataTable" resultType="int">
+        SELECT COUNT(user_id) FROM user
+    </select>
+
+    <select id="findUserById" parameterType="int" resultMap="userResultMap">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+
+    <insert id="save" parameterType="com.bilibili.cn.entity.User">
+        <selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID() AS userId
+        </selectKey>
+        INSERT INTO user
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="userRealName != null">
+                user_realname,
+            </if>
+            <if test="userName != null">
+                username,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+            <if test="userBankCard != null">
+                user_bankcard,
+            </if>
+            <if test="userSex != null">
+                user_sex,
+            </if>
+            <if test="userHandImg != null">
+                user_hand,
+            </if>
+            <if test="userAddr != null">
+                user_addr,
+            </if>
+            <if test="userPhone != null">
+                user_phone,
+            </if>
+            <if test="userQQ != null">
+                user_qq,
+            </if>
+            <if test="userEmail != null">
+                user_email,
+            </if>
+            <if test="userCollection != null">
+                user_collection,
+            </if>
+            <if test="userLogin != null">
+                user_login,
+            </if>
+            <if test="userIp != null">
+                user_ip,
+            </if>
+            <if test="userPass != null">
+                user_pass,
+            </if>
+            <if test="userRmb != null">
+                user_rmb
+            </if>
+        </trim>
+        VALUES(
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId},
+            </if>
+            <if test="userRealName != null">
+                #{userRealName},
+            </if>
+            <if test="userName != null">
+                #{userName},
+            </if>
+            <if test="password != null">
+                #{password},
+            </if>
+            <if test="userBankCard != null">
+                #{userBankCard},
+            </if>
+            <if test="userSex != null">
+                #{userSex},
+            </if>
+            <if test="userHandImg != null">
+                #{userHandImg},
+            </if>
+            <if test="userAddr != null">
+                #{userAddr},
+            </if>
+            <if test="userPhone != null">
+                #{userPhone},
+            </if>
+            <if test="userQQ != null">
+                #{userQQ},
+            </if>
+            <if test="userEmail != null">
+                #{userEmail},
+            </if>
+            <if test="userCollection != null">
+                #{userCollection},
+            </if>
+            <if test="userLogin != null">
+                #{userLogin},
+            </if>
+            <if test="userIp != null">
+                #{userIp},
+            </if>
+            <if test="userPass != null">
+                #{userPass},
+            </if>
+            <if test="userRmb != null">
+                #{userRmb}
+            </if>
+        </trim>
+        )
+    </insert>
+
+    <update id="update" parameterType="com.bilibili.cn.entity.User">
+        UPDATE user
+        <set>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="userRealName != null">
+                user_realname = #{userRealName},
+            </if>
+            <if test="userId != null">
+                username = #{username},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="userBankCard != null">delUserById
+                user_bankcard = #{userBankCard},
+            </if>
+            <if test="userSex != null">
+                user_bankcard = #{userBankCard},
+            </if>
+            <if test="userBankCard != null">
+                user_bankcard = #{userBankCard},
+            </if>
+            <if test="userBankCard != null">
+                user_bankcard = #{userBankCard},
+            </if>
+            <if test="userBankCard != null">
+                user_bankcard = #{userBankCard},
+            </if>
+            <if test="userBankCard != null">
+                user_bankcard = #{userBankCard},
+            </if>
+            <if test="userBankCard != null">
+                user_bankcard = #{userBankCard},
+            </if>
+        </set>
+        WHERE user_id = #{id}
+    </update>
+
+    <delete id="delUserById" parameterType="java.lang.Integer">
+        DELETE FROM user WHERE user_id = #{id}
+    </delete>
 </mapper>
 
 
