@@ -127,15 +127,15 @@ public class AdminController {
 
     @RequestMapping("/user/modify/{id}")
     public String user_modify(@PathVariable("id") Integer id, Model model, HttpSession session) throws UserException {
+        Admin admin = checkAdminLogin(session);
+        model.addAttribute("admin", admin);
+
         Objects.requireNonNull(id);
         User user = userService.findUserById(id);
         if (null == user){
             throw new UserException("该用户不存在！");
         }
-
-        Admin admin = checkAdminLogin(session);
-        model.addAttribute("admin", admin);
-
+        model.addAttribute("user", user);
         return "admin/user_mod";
     }
 

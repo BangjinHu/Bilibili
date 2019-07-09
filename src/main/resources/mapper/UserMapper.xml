@@ -57,7 +57,7 @@
     </select>
 
     <select id="findUserById" parameterType="int" resultMap="userResultMap">
-        SELECT * FROM user WHERE id = #{id}
+        SELECT * FROM user WHERE user_id = #{id}
     </select>
 
     <insert id="save" parameterType="com.bilibili.cn.entity.User">
@@ -206,7 +206,7 @@
                 user_bankcard = #{userBankCard},
             </if>
         </set>
-        WHERE user_id = #{id}
+        WHERE user_id = #{userId}
     </update>
 
     <delete id="delUserById" parameterType="java.lang.Integer">
